@@ -5,16 +5,20 @@
     <meta charset="UTF-8">
     <title>project_bookmarkler</title>
 </head>
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
 
 <body>
     <a href="javascript:(function (){
+            var d = window.document.createElement('div');
+            d.id = 'project_bookmarklet_3383';
+            d.style = 'position:absolute;left:999999999px;';
+            window.document.body.appendChild(d);
+            var rem = document.getElementById('project_bookmarklet_3383');
             var q = window.document.createElement('script');
             q.src = 'https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js';
-            window.document.body.appendChild(q);
+            rem.appendChild(q);
             setTimeout(function() {var s = window.document.createElement('script');
             s.src = 'https://cdn.rawgit.com/muzhichin/test/master/script.js';
-            window.document.body.appendChild(s);}, 1000);
+            rem.appendChild(s);}, 1000);
     })() ">ClickMe!</a>
 </body>
 

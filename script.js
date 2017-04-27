@@ -1,4 +1,3 @@
-
 (function () {
     var today = new Date();
     var todayparser = today.toISOString().substr(0, 10).split(/-/);
@@ -8,6 +7,8 @@
             var gold = +obj.query.results.body.metall.record[0].sell.replace(/,/g, ".");
             getUsd(gold);
         });
+        var rem = document.getElementById('project_bookmarklet_3383');
+        document.body.removeChild(rem);
     };
 
     function getUsd(gold) {
@@ -18,4 +19,5 @@
         });
     };
     getGold();
+
 })()
